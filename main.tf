@@ -88,14 +88,14 @@ resource "aws_security_group" "tf_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # SSH access for Ubuntu
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
     from_port   = 3389
     to_port     = 3389
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # RDP access for Windows
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
